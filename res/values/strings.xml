@@ -4,7 +4,8 @@
     <string name="app_name">IWasRight</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="quarreling_button">I\'M QUARRELING!</string>
+    <string name="quarreling_button">I\'M QUARRELING</string>
     <string name="feedback_button">FEEDBACK</string>
+    <string name="enough_button">ENOUGH</string>
 
 </resources>
