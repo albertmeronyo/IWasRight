@@ -7,5 +7,20 @@
     <string name="quarreling_button">I\'M QUARRELING</string>
     <string name="feedback_button">FEEDBACK</string>
     <string name="enough_button">ENOUGH</string>
+    <string name="user_A_name">Alice</string>
+    <string name="user_B_name">Bob</string>
+    <string name="versus">VS</string>
+    <string name="score">Score</string>
+    <string name="contribution">Contr. ratio</string>
+    <string name="score_A">55430</string>
+    <string name="score_B">24300</string>
+    <string name="contribution_A">57%</string>
+    <string name="contribution_B">43%</string>
+    <string name="good_words">Good words</string>
+    <string name="bad_words">Bad words</string>
+    <string name="good_words_A">3</string>
+    <string name="good_words_B">2</string>
+    <string name="bad_words_A">6</string>
+    <string name="bad_words_B">12</string>
 
 </resources>
