@@ -25,6 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.blackbox.QuarrelingActivity">
+        </activity>
+        <activity android:name="com.example.blackbox.FeedbackActivity"></activity>
     </application>
 
 </manifest>

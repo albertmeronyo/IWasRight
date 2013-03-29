@@ -12,6 +12,7 @@ package com.example.blackbox;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -19,8 +20,6 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 	Button feedback, quarreling;
-	//AudioThread audioThread;
-	//AudioRecordingHandler audioHandler;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +37,13 @@ public class MainActivity extends Activity {
         quarreling = (Button) this.findViewById(R.id.quarreling);
         quarreling.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		Intent switchToQuarelling = new Intent(MainActivity.this, QuarrelingActivity.class);
-        		MainActivity.this.startActivity(switchToQuarelling);
+        		Intent switchToQuarelling = new Intent();
+        		PackageManager manager = getPackageManager();
+        		switchToQuarelling = manager.getLaunchIntentForPackage("com.google.android.noisealert");
+        		if (switchToQuarelling != null){
+        			switchToQuarelling.addCategory(Intent.CATEGORY_LAUNCHER);
+        			MainActivity.this.startActivity(switchToQuarelling);
+        		}
         	}
         });
         
